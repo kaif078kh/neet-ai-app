@@ -4,7 +4,7 @@ const app = express();
 
 app.use(express.json());
 
-const API_KEY = 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
+const Api_key="process.env.OPENAI_API_KEY";
 
 app.post("/ask", async (req, res) => {
   const { question, type } = req.body;
