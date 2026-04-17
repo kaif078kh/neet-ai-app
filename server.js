@@ -4,7 +4,7 @@ const app = express();
 
 app.use(express.json());
 
-const API_KEY = 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
+const API_KEY = "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";
 
 app.post("/ask", async (req, res) => {
   const { question, type } = req.body;
